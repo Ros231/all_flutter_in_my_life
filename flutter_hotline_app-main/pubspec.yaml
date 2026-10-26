@@ -1,0 +1,47 @@
+name: flutter_hotline_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 < 4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  font_awesome_flutter: ^10.12.0
+  google_fonts: ^8.0.0
+  fluentui_system_icons: ^1.1.273 #แสดงไอคอน
+  # map_launcher: ^4.4.2
+  carousel_slider: ^5.1.2 #แสดงสไลด์รูปภาพ
+  url_launcher: ^6.3.2 #เปิดลิงก์ภายนอก
+  flutter_map : ^8.2.2 #แสดงแผนที่
+  latlong2: ^0.9.1 #จัดการพิกัดบนแผนที่
+  # dots_indicator: ^4.0.1 #แสดงจุดบอกตำแหน่งในสไลด์
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  icons_launcher: ^3.0.3 #แพ็กเกจสำหรับสร้างไอคอนแอป แอป icon ที่แสดงในจอมือถือ
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+icons_launcher:
+  image_path: "assets/icons/cake_icon.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
